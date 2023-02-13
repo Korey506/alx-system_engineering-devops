@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -i " ^(a-z) " /etc/ssh/sshd_config
+echo $(cut -c1 | tr -d " \n")ig
