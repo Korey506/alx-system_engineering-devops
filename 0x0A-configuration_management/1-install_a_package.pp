@@ -1,9 +1,5 @@
-# Using Puppet, create a file in /tmp.
-file  { '/tmp/school':
-  ensure  => 'file',
-  path    => '/tmp/school',
-  owner   => 'www-data',
-  group   => 'www-data',
-  mode    => '0744',
-  content => 'I love Puppet',
+# Using Puppet, install flask from pip3
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }
